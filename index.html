@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doob</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="assets/images/logo.png" alt="Doob"></div>
+        <div class="nav_wrapper">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="menu_link">Home.</a></li>
+                    <li><a href="#" class="menu_link">About us.</a></li>
+                    <li><a href="#work" class="menu_link">Portfolio.</a></li>
+                    <li><a href="#" class="menu_link">Blog.</a></li>
+                    <li><a href="#contacts" class="menu_link">Contact us.</a></li>
+                    <!-- LANGUAGE BUTTON FOR MOBILE VERSION -->
+                    <li><select name="lang" class="nav_lang none">
+                            <option value="en">En</option>
+                            <option value="ru">Ru</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- SECTION WITH LANG BUTTON AND CONTACT US BUTTON -->
+            <div class="nav_aside">
+                <select name="lang" class="nav_lang">
+                    <option value="en">En</option>
+                    <option value="ru">Ru</option>
+                </select>
+                <button class="nav_contact-link">
+                    <span>Contact Us</span>
+                    <img class="img" src="assets/images/Arrow.png" alt="contact us">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main">
+            <div class="main_text">
+                <h1 class="title title_main">The Spirit of Digital Agency</h1>
+                <p class="main_description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                    porttitor accumsan tincidunt.</p>
+                <div class="main_links">
+                    <button class="buttons">More About us</button>
+                    <a href="#">Get In Touch.</a>
+                </div>
+            </div>
+            <!-- IMAGES FOR SLICK SLIDER. 2-4 HIDES IN MOBILE VERSION-->
+            <div class="main_image">
+                <img class="slider-image" src="assets/images/main_block.png" alt="Digital agency">
+                <img class="slider-image" src="assets/images/main_block.png" alt="Digital agency">
+                <img class="slider-image" src="assets/images/main_block.png" alt="Digital agency">
+                <img class="slider-image" src="assets/images/main_block.png" alt="Digital agency">
+            </div>
+        </section>
+
+        <section class="work" id="work">
+            <h2 class="title title_sub mb60">
+                <span>See some of our</span> <br>
+                <span>Creative work.</span>
+            </h2>
+            <div class="work_list">
+                <div class="work_item"></div>
+                <div class="work_item"></div>
+                <div class="work_item"></div>
+                <div class="work_item"></div>
+                <div class="work_item"></div>
+                <div class="work_item"></div>
+            </div>
+            <a href="#" class="work_link-more">See More of These</a>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h3 class=contacts_subtitle>Contact us</h3>
+            <h2 class="title title_sub">Get in touch</h2>
+            <form action="#" class="contact-form">
+                <input class="form-input" id="input_email" type="text" placeholder="Your email">
+                <input class="form-input" type="text" id="input_subject" placeholder="Subject">
+                <textarea class="form-input" id="input_message" placeholder="Message here..."></textarea>
+                <div class="errors" id="errors"></div>
+                <button class="buttons buttons_send" id="button_send" type="button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer_subtitle">doob</h3>
+        <h2 class="title title_sub title_footer">Get in touch</h2>
+
+        <ul class="footer_nav">
+            <li><a href="#">Home.</a></li>
+            <li><a href="#">About us.</a></li>
+            <li><a href="#">Portfolio.</a></li>
+            <li><a href="#">Blog.</a></li>
+            <li><a href="#">Contact us.</a></li>
+        </ul>
+
+        <span class="footer_rights">&#169; 2019 - Doob, All Right Reserved</span>
+
+        <div class="footer_social">
+            <a href="#">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="#">
+                <span class="icon-twitter"></span>
+            </a>
+            <a href="#">
+                <span class="icon-dribbble"></span>
+            </a>
+        </div>
+    </footer>
+
+    <!-- BUTTONS FOR SHOW/HIDE MENU -->
+    <button class="ham">
+        <span class="icon-menu menu_icon"></span>
+        <span class="icon-cross close_icon"></span>
+    </button>
+
+    <!-- POPUP FORM (OPENS ON CLICK BUTTON "CONTACT US" IN HEADER)-->
+    <form action="#" class="contact-form contact-form_popup">
+        <h3 class="contacts_subtitle">Contact us</h3>
+        <input class="form-input form-input_popup" id="input_email_popup" type="text" placeholder="Your email">
+        <input class="form-input" type="text" id="input_subject_popup" placeholder="Subject">
+        <textarea class="form-input" id="input_message_popup" placeholder="Message here..."></textarea>
+        <div class="errors" id="errors_popup"></div>
+        <button class="buttons buttons_send" id="button_send_popup">Send Message</button>
+        <!-- CLOSE FORM BUTTON -->
+        <span class="icon-cross close_form"></span>
+    </form>
+
+    <!-- SCRIPTS FOR SLICK SLIDER -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

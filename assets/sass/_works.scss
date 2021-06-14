@@ -1,0 +1,57 @@
+.work {
+    margin: 30px 20px 70px 20px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        margin: 0 5% 100px 5%;
+    }
+    @media screen and (min-width: 1024px) {
+        margin: 0 15% 300px 15%;
+    }
+
+    &_list {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &_item {
+        margin-bottom: 10px;
+        width: 45%;
+        height: 70px;
+        background-color: #c3d0d8;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 20px;
+            width: 30%;
+            height: 155px;
+        }
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 30px;
+            height: 275px;
+        }
+    }
+
+    &_link-more {
+        font-size: 13px;
+        color: $color-red;
+        text-align: center;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+}

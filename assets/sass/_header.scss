@@ -1,0 +1,216 @@
+header {
+    @media screen and (min-width: 768px) {
+        margin: 20px 0 50px 0;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    @media screen and (min-width: 1024px) {
+        margin: 70px 0 100px 0;
+    }
+}
+
+.logo {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 2%;
+        display: flex;
+        width: 15%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    @media screen and (min-width: 1024px) {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// BUTTON FOR MENU
+.ham {
+    position: fixed;
+    z-index: 100;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background: white;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.close_icon {
+    display: none;
+    color: $color-blue;
+    font-size: 20px;
+}
+
+.menu_icon {
+    color: $color-blue;
+    font-size: 20px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+//MENU LIST
+.nav_wrapper {
+    @media screen and (min-width: 768px) {
+        margin-right: 5%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-right: 15%;
+        align-items: center;
+    }
+}
+
+.menu {
+    position: fixed;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    background: #f8f0f0;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+        position: relative;
+        display: inline-block;
+        width: auto;
+        transform: none;
+        transition: none;
+        background: #ffffff;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    li {
+        padding: 10px 0;
+
+        @media screen and (min-width: 768px) {
+            padding: 5px 0;
+            margin-right: 40px;
+            width: 110px;
+        }
+        @media screen and (min-width: 1024px) {
+            padding: 0;
+            margin-right: 45px;
+            width: fit-content;
+        }
+    }
+
+    &_link {
+        font-size: 18px;
+        color: $color-blue;
+        text-decoration: none;
+    }
+}
+
+// SELECTOR FOR FUNCTION TO SHOW/HIDE MENU
+.showMenu {
+    transform: translateY(0);
+}
+
+// PART WITH LANGUAGE & BUTTON "CONTACT US"
+.nav_aside {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.none {
+    // display: none;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.nav_lang {
+    color: $color-blue;
+    border: none;
+    background-color: #f8f0f0;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 0px;
+        margin-bottom: 5px;
+        background-color: #ffffff;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-right: 45px;
+    }
+}
+
+.nav_contact-link {
+    @media screen and (min-width: 768px) {
+        padding: 18px 19px 20px 34px;
+        display: flex;
+        justify-content: space-between;
+        width: 201px;
+        height: 61px;
+        text-decoration: none;
+        box-shadow: 0px 5px 10px 0 rgba(25, 45, 51, 0.15);
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background: $color-red;
+            box-shadow: 0 15px 20px rgba(255, 57, 70, .4);
+            span {
+                color: #fff;
+            }
+        }
+
+        span {
+            align-self: flex-start;
+            font-family: 'Work Sans',
+                sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 18px;
+            letter-spacing: 0.18px;
+            text-align: left;
+            color: $color-red;
+        }
+
+        img {
+            align-self: flex-end;
+        }
+    }    
+}
